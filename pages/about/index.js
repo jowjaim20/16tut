@@ -1,10 +1,5 @@
-const About =()=>{
-	return (
-		<div className=' text-gray-900 font-bold bg-blue-300 '>
-	About
-		</div>
-		)
-}
-
+const About = () => {
+  return <div className="main text-gray-900 font-bold ">About</div>;
+};
 
 export default About;

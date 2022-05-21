@@ -1,20 +1,18 @@
-import Header from './Header'
-import Footer from './Footer'
-import Nav from './Nav'
+import Header from "./Header";
+import Footer from "./Footer";
+import Nav from "./Nav";
 
+const Layout = ({ children }) => {
+  return (
+    <div>
+      <Header />
+      <Nav />
 
-const Layout =({children, search, setSearch})=>{
-	return (
-		<div>
-		<Header/>
-		<Nav search={search} setSearch={setSearch} />
-		
-	{children}
-	
-	<Footer/>
-		</div>
-		)
-}
+      {children}
 
+      <Footer />
+    </div>
+  );
+};
 
 export default Layout;

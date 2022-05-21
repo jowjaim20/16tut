@@ -1,10 +1,5 @@
-const PostPage =()=>{
-	return (
-		<div className=' text-gray-900 font-bold bg-blue-300 '>
-	PostPage
-		</div>
-		)
-}
-
+const PostPage = () => {
+  return <div className="main text-gray-900 font-bold  ">PostPage</div>;
+};
 
 export default PostPage;

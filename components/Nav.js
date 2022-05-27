@@ -10,7 +10,7 @@ const Nav = () => {
   return (
     <nav className="flex py-3 px-2 text-gray-900 font-bold bg-gray-800 ">
       <form
-        className="flex gap-6"
+        className="flex flex-col gap-1 md:flex-row"
         onSubmit={(e) => {
           e.preventDefault();
         }}

@@ -3,11 +3,11 @@ import { useContext } from "react";
 import DataContext from "../pages/context/DataContext";
 
 const Nav = () => {
-  const { search, setSearch, handleSearch } = useContext(DataContext);
+  const { search, setSearch } = useContext(DataContext);
   return (
     <nav className="flex py-3 px-2 text-gray-900 font-bold bg-gray-800 ">
       <form
-        className=""
+        className="flex gap-6"
         onSubmit={(e) => {
           e.preventDefault();
         }}

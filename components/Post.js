@@ -1,7 +1,7 @@
 import Link from "next/link";
 const Post = ({ title, body, datetime, id }) => {
   return (
-    <div className="rounded bg-white w-11/12 flex flex-col justify-center shadow items-center overflow-hidden">
+    <div className="rounded bg-white w-11/12 flex flex-col justify-center shadow shadow-blue-600 items-center overflow-hidden">
       <Link href={`/postpage/${id}`}>
         <a className="w-full text-center">
           <h1 className=" bg-blue-200 w-full uppercase ">{title}</h1>

@@ -1,9 +1,12 @@
 import Link from "next/link";
 import { useContext } from "react";
 import DataContext from "../pages/context/DataContext";
+import useWindowSize from "../pages/hooks/useWindowSize";
+import { FaLaptop, FaTabletAlt, FaMobileAlt } from "react-icons/fa";
 
 const Nav = () => {
   const { search, setSearch } = useContext(DataContext);
+  const { width } = useWindowSize();
   return (
     <nav className="flex py-3 px-2 text-gray-900 font-bold bg-gray-800 ">
       <form
@@ -39,6 +42,15 @@ const Nav = () => {
             <Link href="/about">
               <a>About</a>
             </Link>
+          </li>
+          <li className="flex justify-center items-center">
+            {width < 768 ? (
+              <FaMobileAlt />
+            ) : width < 1200 ? (
+              <FaTabletAlt />
+            ) : (
+              <FaLaptop />
+            )}
           </li>
         </ul>
       </form>
